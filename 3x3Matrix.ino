@@ -1,5 +1,5 @@
 
-int bits [49][6] = 
+int bits [49][6] = // binary array for differnt led lighting pattans. [0],[1],[2] are the positive termianls, [3],[4],[5] are negative. 
 {
   {0,0,1,0,0,0},
   {0,0,1,0,0,1},
@@ -68,7 +68,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 
-  int k = random(0,49);
+  int k = random(0,49); // selects random pattan from the 'bits' array
   
   for (int j = 0; j<=6; j++)
   {
